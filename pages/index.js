@@ -1,6 +1,8 @@
 import { getSession } from 'next-auth/client'
 import Head from 'next/head'
 import Header from '../Components/Header'
+import Login from '../Components/Login'
+import Sidebar from '../Components/Sidebar'
 
 
 
@@ -12,11 +14,11 @@ export default function Home({ session }) {
         <title>facebook</title>
       </Head>
 
-      {/* header */}
+      
       <Header />
 
-      <main>
-        {/* sidebar */}
+      <main>  
+        <Sidebar/>
 
         {/* feed */}
 
